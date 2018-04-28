@@ -1,0 +1,28 @@
+.detail-area{
+  padding: 40rpx;
+  font-size: 28rpx;
+  line-height: 48rpx;
+  text-indent: 2rem;
+}
+
+.detail-title{
+  text-align: center;
+  font-size: 36rpx;
+  margin: 30rpx 0;
+  font-weight: bold;
+}
+
+.detail-image{
+  text-align: center;
+  margin: 80rpx 0;
+}
+
+.detail-image image{
+  width: 280rpx;
+  height: 280rpx;
+  border-radius: 50%;
+}
+
+.detail-content{
+  text-align: justify;
+}

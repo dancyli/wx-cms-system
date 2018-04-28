@@ -1,0 +1,10 @@
+<view class='container'>
+  <view class='detail-area'>
+    <view class='detail-title'>{{info.title}}</view>
+    <view>{{info.cTime}}</view>
+    <view class='detail-image'>
+      <image src="{{info.img}}"></image>
+    </view>
+    <view class='detail-content'>{{info.content}}</view>
+  </view>
+</view>

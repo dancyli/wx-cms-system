@@ -17,4 +17,5 @@
   <template is="items" data="{{item}}"></template>
 </block>
 
+<view class="load-more" bindtap="loadMore" data-lastid="{{lastId}}">{{bottomText}}</view>
 </view>

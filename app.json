@@ -1,10 +1,10 @@
 {
   "pages":[
     "pages/index/index",
+    "pages/form/form",
     "pages/list/list",
     "pages/detail/detail",
-    "pages/logs/logs",
-    "pages/form/form"
+    "pages/logs/logs"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -13,6 +13,7 @@
     "navigationBarTextStyle":"#fff"
   },
   "tabBar": {
+    "selectedColor": "#F24B21",
     "list": [
       {
         "pagePath": "pages/index/index",

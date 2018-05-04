@@ -1,0 +1,61 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+
+  <view class="section">
+    <view class="section__title">姓名：</view>
+    <input name="username" placeholder="请输入姓名" />
+  </view>
+  <view class="section">
+    <view class="section__title">邮箱：</view>
+    <input name="email" placeholder="请输入邮箱" />
+  </view>
+  <view class='section'>
+    <view class="section__title">关注的产品：</view>
+    <checkbox-group  name="product">
+      <label class="checkbox"><checkbox value="0"/>微商城</label>
+      <label class="checkbox"><checkbox value="1"/>微社区</label>
+      <label class="checkbox"><checkbox value="2"/>乐视</label>
+    </checkbox-group>
+  </view>
+   <view class="section section_gap">
+    <view class="section__title">来源渠道：</view>
+    <radio-group name="from">
+      <label><radio value="0"/>百度搜索</label>
+      <label><radio value="1"/>朋友介绍</label>
+      <label><radio value="2"/>公众号推送</label>
+    </radio-group>
+  </view>
+  <view class="section">
+    <view class="section__title">你所在的地区：</view>
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+      <view class="picker">
+        {{array[index]}}
+      </view>
+    </picker>
+  </view>
+  <view class="section">
+    <view class="section__title">反馈时间：</view>
+    <picker mode="date" value="{{date}}" start="" end="" bindchange="bindDateChange">
+      <view class="picker">
+        {{date}}
+      </view>
+    </picker>
+  </view>
+  <view class="section section_gap">
+    <view class="section__title">请给我们打分：</view>
+    <view class="body-view">
+      <slider bindchange="sliderChange" show-value/>
+    </view>
+  </view>
+  <view class="section section_gap">
+    <view class="section__title">你是否是前端开发人员：</view>
+    <switch bindchange="switchChange"/>
+  </view>
+  <view class="section section_gap">
+    <view class="section__title">备注：</view>
+    <textarea placeholder="这里可以填写备注" name="remark" auto-focus />
+  </view>
+
+  <view class="btn-area">
+    <button formType="submit">提交反馈</button>
+  </view>  
+</form>

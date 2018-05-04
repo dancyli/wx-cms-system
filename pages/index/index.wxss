@@ -1,0 +1,25 @@
+.container-home{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.functional-module-area{
+     margin: 200rpx 0;   
+}
+.functional-module{
+  margin: 30rpx 50rpx; 
+  border: 1px solid #EFDE87;
+  border-radius: 10rpx; 
+  text-align: center;
+  line-height: 200rpx;
+  font-size: 36rpx;
+  background: rgba(255, 255, 255, .3);
+  color: #B7981A;
+}
+
+image {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}

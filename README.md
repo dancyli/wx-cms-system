@@ -7,7 +7,7 @@
 
 - 如在安装xampp时遇到问题，可参考文档 [https://blog.csdn.net/qq_33036599/article/details/80078881](https://blog.csdn.net/qq_33036599/article/details/80078881 "xampp安装报错及问题解决方法步骤总结")
 
-- 本项目weiphp后台源码压缩包百度云下载地址：[https://pan.baidu.com/s/1jnPMxMxjM6E35FP3B06Blw](https://pan.baidu.com/s/1jnPMxMxjM6E35FP3B06Blw "后台源码下载") 密码：k3i3
+- 本项目weiphp后台源码压缩包百度云下载地址：[https://pan.baidu.com/s/1jOSaRBVev1Jp0_ERvjuR_Q](https://pan.baidu.com/s/1jnPMxMxjM6E35FP3B06Blw "后台源码下载") 密码：8hlb
 
 - 关于weiphp的安装使用请参考视频： [https://pan.baidu.com/s/1L8N-0ReIVkyVlJ5j-Z9_WQ](https://pan.baidu.com/s/1L8N-0ReIVkyVlJ5j-Z9_WQ "weiphp的安装视频") 密码：7n0w
 

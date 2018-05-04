@@ -32,13 +32,22 @@ Page({
           info: {
             id: detail.id,
             title: detail.title,
-            cTime: detail.title.cTime,
+            cTime: detail.cTime,
             img: detail.img,
             content: detail.content
           }
         })
+        //设置当前页的页面标题
+        wx.setNavigationBarTitle({
+          title: detail.title
+        })
       }
     })
   },
+
+  closePage: function()
+  {
+    wx.navigateBack();
+  }
 
 })

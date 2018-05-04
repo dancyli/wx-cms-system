@@ -23,6 +23,17 @@
   border-radius: 50%;
 }
 
+.detail-time{
+  color: #ccc;
+  text-align: right;
+}
+
 .detail-content{
   text-align: justify;
+}
+.close{
+  text-align: center;
+  margin: 20rpx;
+  color: #aaa;
+  font-size: 36rpx;
 }

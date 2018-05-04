@@ -1,13 +1,37 @@
 {
   "pages":[
     "pages/index/index",
+    "pages/list/list",
     "pages/detail/detail",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/form/form"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#000",
     "navigationBarTitleText": "cms内容管理系统",
     "navigationBarTextStyle":"#fff"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/home-black.png",
+        "selectedIconPath": "images/home.png"
+      },
+      {
+        "pagePath": "pages/list/list",
+        "text": "文章列表",
+        "iconPath": "images/list-black.png",
+        "selectedIconPath": "images/list.png"
+      },
+      {
+        "pagePath": "pages/form/form",
+        "text": "用户反馈",
+        "iconPath": "images/edit-black.png",
+        "selectedIconPath": "images/edit.png"
+      }
+    ]
   }
 }

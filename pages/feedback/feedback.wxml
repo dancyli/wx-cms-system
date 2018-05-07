@@ -1,0 +1,14 @@
+<view class='feedback-list'>
+  <template name="list">
+    <view class='feedback-list-item'>
+      <view class='list-item-name'>{{username}} <text class='list-item-email'>{{email}}</text> <text class='list-item-score'>打分：{{score}}</text></view>
+      <view class='list-item-from'>来源渠道：{{fromNames[from]}}</view>
+      <view class='list-item-time'>{{cTime}}</view>
+    </view>
+  </template>
+
+  <block wx:for="{{info}}" wx:key='{{index}}'>
+    <template is="list" data="{{...item, fromNames}}"></template>
+  </block>
+  <view class='load-more' bindtap='loadMore'>{{loadMoreText}}</view>
+</view>

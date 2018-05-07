@@ -1,0 +1,37 @@
+.feedback-list {
+  background: #eee;
+}
+.feedback-list-item{
+  background: #fff;
+  height: 120rpx;
+  padding: 30rpx;
+  margin-bottom: 4rpx;
+  color: #333;
+  position: relative;
+}
+
+.list-item-email, .list-item-score{ 
+  font-size: 32rpx;
+}
+.list-item-score{
+  float: right;
+}
+.list-item-from, .list-item-time{
+  font-size: 28rpx;
+  color: #ccc;
+  position: absolute;
+  bottom: 20rpx;
+}
+
+.list-item-time{
+  right: 30rpx;
+}
+
+.load-more{
+  text-align: center;
+  padding: 30rpx 0;
+  font-size: 32rpx;
+  color: #aaa;
+  background: #fff;
+
+}

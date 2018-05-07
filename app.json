@@ -4,7 +4,8 @@
     "pages/form/form",
     "pages/list/list",
     "pages/detail/detail",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/feedback/feedback"
   ],
   "window":{
     "backgroundTextStyle":"light",

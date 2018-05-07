@@ -18,5 +18,12 @@ Page({
       imagewidth: imageSize.imageWidth,
       imageheight: imageSize.imageHeight
     })
+  },
+
+  goToFeedback: function()
+  {
+    wx.navigateTo({
+      url: '../feedback/feedback'
+    })
   }
 })

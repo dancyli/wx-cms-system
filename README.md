@@ -56,5 +56,9 @@
 ![](https://i.imgur.com/cg3XaDt.png)
 ![](https://i.imgur.com/BqDM07q.png)
 
+## phpMyAdmin 数据库 ##
+![](https://i.imgur.com/kPALI8j.png)
+![](https://i.imgur.com/xFk6Kx6.png)
+
 **未完待续...**
 

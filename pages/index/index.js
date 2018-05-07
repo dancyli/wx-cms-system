@@ -25,5 +25,11 @@ Page({
     wx.navigateTo({
       url: '../feedback/feedback'
     })
+  },
+  goToCreate: function()
+  {
+    wx.navigateTo({
+      url: '../create/create'
+    })
   }
 })

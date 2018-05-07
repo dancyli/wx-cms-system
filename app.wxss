@@ -8,3 +8,38 @@
   /* padding: 200rpx 0; */
   box-sizing: border-box;
 } 
+
+.require-label::before{
+  content: "* ";
+  color: red;
+}
+
+.section{
+  margin: 30rpx;
+  font-size: 32rpx;
+}
+.section input, .section radio-group, .section checkbox-group, .section textarea, .section picker, .section slider, .section switch, .section view{
+  margin-top: 20rpx;
+}
+
+radio-group label, checkbox-group label{
+  margin-right: 20rpx;
+  vertical-align: bottom;
+}
+
+button {
+  color: #333;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 36rpx;
+}
+
+.choose-image{
+  width: 160rpx;
+  height: 160rpx;
+  border: 1px solid #ccc;
+  text-align: center;
+  line-height: 145rpx;
+  font-size: 100rpx;
+  color: #ccc;
+}

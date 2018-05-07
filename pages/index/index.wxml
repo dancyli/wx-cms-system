@@ -2,7 +2,7 @@
   <image src="../../images/background.jpg" bindload="imageLoad" style="height: {{imageheight}}px;" ></image>
   <view class='functional-module-area'>
     <view class='functional-module' bindtap='goToFeedback'>我的反馈</view>
-    <view class='functional-module'>创建文章</view>
+    <view class='functional-module' bindtap='goToCreate'>创建文章</view>
   </view>
   
 </view>

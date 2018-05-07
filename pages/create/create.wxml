@@ -1,0 +1,23 @@
+<view class="create-content">
+  <form bindsubmit="formSubmit" bindreset="formReset">
+
+      <view class="section">
+        <view class="section__title require-label">标题：</view>
+        <input name="username" placeholder="请输入姓名" />
+      </view>
+
+      <view class="section section_gap">
+        <view class="section__title require-label">正文：</view>
+        <textarea placeholder="请填写正文内容" name="remark" auto-focus />
+      </view>
+
+      <view class="section section_gap">
+        <view class="section__title require-label">封面：</view>
+        <view class='choose-image'>+</view>
+      </view>
+
+      <view class="btn-area">
+        <button formType="submit">点击创建</button>
+      </view>  
+</form>
+</view>

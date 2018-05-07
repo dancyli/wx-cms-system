@@ -62,6 +62,7 @@ Page({
         'Content-Type': 'application/x-www-form-urlencoded'
       },
       success: function (res) {
+        console.log(res)
         wx.showToast({
           title: '反馈成功，谢谢您的反馈！',
           icon: 'success',

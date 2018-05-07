@@ -8,10 +8,10 @@ Page({
   data: {
     info: {
       id: '',
-      title: 'title',
-      cTime: '2017-04-28',
-      img: 'http://localhost:801/weicms/Uploads/Picture/2018-04-28/5ae4293f70b53.jpg',
-      content: '丹阳县为天下最有名的两位讼师林正庸和一锤先生的归隐之所，一直吸引来自五湖四海的优秀讼师们聚集在这儿。'
+      title: '',
+      cTime: '',
+      img: '',
+      content: ''
     }
   },
 
@@ -20,6 +20,8 @@ Page({
    */
   onLoad: function (options) {
     var that = this;
+    var key = 'info_' + options.id;
+
     wx.request({
       url: 'http://localhost:801/weicms/index.php?s=/addon/Cms/Cms/getDetail/id/' + options.id,
       data: {},
@@ -27,7 +29,10 @@ Page({
         'Content-Type': 'application/json'
       },
       success: function (res) {
-        var detail = res.data;
+        var detail = res.data;      
+        
+        wx.setStorageSync(key, detail);
+
         that.setData({
           info: {
             id: detail.id,
@@ -37,10 +42,39 @@ Page({
             content: detail.content
           }
         })
+
         //设置当前页的页面标题
         wx.setNavigationBarTitle({
           title: detail.title
         })
+      },
+      fail: function(res)
+      {
+        var detail = wx.getStorageSync(key)
+
+        if (detail)
+        {
+          that.setData({
+            info: {
+              id: detail.id,
+              title: detail.title,
+              cTime: detail.cTime,
+              img: detail.img,
+              content: detail.content
+            }
+          })
+          wx.showToast({
+            title: '网络异常，已加载缓存数据',
+            icon: 'none'
+          })
+        }
+        else{
+          wx.showToast({
+            title: '网络异常，暂无缓存数据',
+            icon: 'none'
+          })
+        }
+        
       }
     })
   },

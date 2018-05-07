@@ -53,7 +53,32 @@ Page({
           contentList: newData,
           bottomText: "加载更多"
         })
+        if(lastId == 0)
+        {
+          wx.setStorageSync('CmsList', newData);
+        }
+        
         wx.hideLoading()
+      },
+      fail: function(res) {
+        if (lastId == 0)
+        {
+          var data = wx.getStorageSync('CmsList')
+
+          that.setData({
+            lastId: data[data.length - 1].id,
+            contentList: data,
+            bottomText: ""
+          })
+
+          wx.hideLoading()
+          wx.showToast({
+            title: '网络异常，已加载缓存数据',
+            icon: 'none'
+          })
+        }
+        
+        
       }
     })
   },
